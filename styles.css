@@ -1,7 +1,8 @@
 /* Estilos generales */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #1a1a1a; /* Fondo oscuro */
+    color: #ffffff; /* Texto claro */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -12,48 +13,27 @@ body {
 /* Contenedor principal */
 .container {
     text-align: center;
-    background-color: #ffffff;
-    padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 90%;
-    max-width: 400px;
 }
 
 /* Título */
 h1 {
     font-size: 2rem;
-    color: #333333;
     margin-bottom: 1.5rem;
 }
 
 /* Número generado */
 #randomNumber {
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: bold;
-    color: #007bff;
     margin: 1.5rem 0;
-    animation: fadeIn 0.5s ease;
+    color: #ffcc00; /* Color amarillo para el número */
+    animation: fadeIn 0.5s ease; /* Animación al generar el número */
 }
 
 /* Animación para el número generado */
 @keyframes fadeIn {
     from { opacity: 0; transform: scale(0.9); }
     to { opacity: 1; transform: scale(1); }
-}
-
-/* Campos para definir el rango */
-.range-inputs {
-    margin-bottom: 1.5rem;
-}
-
-.range-inputs input {
-    width: 100px;
-    padding: 0.5rem;
-    font-size: 1rem;
-    border: 1px solid #cccccc;
-    border-radius: 5px;
-    margin: 0 0.5rem;
 }
 
 /* Botón */
@@ -70,22 +50,4 @@ h1 {
 
 #generateButton:hover {
     background-color: #0056b3;
-}
-
-/* Historial de números generados */
-.history {
-    margin-top: 2rem;
-}
-
-#historyList {
-    list-style-type: none;
-    padding: 0;
-}
-
-#historyList li {
-    background-color: #f9f9f9;
-    margin: 0.5rem 0;
-    padding: 0.5rem;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
